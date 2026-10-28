@@ -1,0 +1,9 @@
+gametitle=Triple Play Baseball (USA) [SLUS-20168]
+
+[Widescreen 16:9]
+gsaspectratio=16:9
+author=Claude
+description=3D 원근 투영 가로 시야를 4/3 넓힘(EAGL ViewPort::SetPerspective). 2D HUD는 늘어남.
+patch=1,EE,002bde10,word,3c013f40
+patch=1,EE,002bde34,word,46140003
+patch=1,EE,002bde38,word,c7b40030

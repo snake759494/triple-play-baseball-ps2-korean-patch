@@ -1,0 +1,21 @@
+{
+ "version": "v1.0",
+ "date": "2026-10-28",
+ "game": "Triple Play Baseball (USA) / SLUS-20168 / PS2 (CD, BIN/CUE MODE2/2352)",
+ "asset": "Triple_Play_Baseball_PS2_KO_v1.0.xdelta",
+ "asset_size": 1282808,
+ "asset_sha256": "eca94b0cfb403e23a9d19650908adb92dbf3f46871ac4184077fc8b67575be0e",
+ "xdelta_options": "xdelta3 -e -0 -S none -A (no compression, no secondary compression, no application header)",
+ "source_bin_size": 655714080,
+ "source_bin_md5": "ce856af54ca6b876bf1d6f393b721dea",
+ "source_bin_sha1": "f7f59359f28ab0bca9e671239201de14636ada80",
+ "source_bin_sha256": "bc0381c573554ecb8a7af97908aebb8850973ab3bb06068f89a8f08248dd9ad2",
+ "output_bin_size": 656650176,
+ "output_bin_md5": "63b426a807145440f6e393346a88ed4a",
+ "output_bin_sha1": "6ced97654559b51d997f044f2d206518f7458554",
+ "output_bin_sha256": "44f85bf924f0527ff8e1f4af8b4cb4874f7ba8e97acfaa880bd35d590673d6ee",
+ "widescreen": {
+  "SLUS-20168_146E1999.pnach": {"for": "한글판 (CRC 146E1999)", "size": 337, "sha256": "45ca883a8b3cad30988f1f9dadd1a0bdc192f69dba79a22aaefdf20f6946fb40"},
+  "SLUS-20168_69952C2E.pnach": {"for": "원본 북미판 (CRC 69952C2E)", "size": 323, "sha256": "80f237f1174226911aaf563518bf082b2063cff0070761a6931f4023e1c6235f"}
+ }
+}

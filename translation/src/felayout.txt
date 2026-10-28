@@ -1,0 +1,364 @@
+'00 Record:|'00 성적:
+'00 Stats|'00 기록
+(overall)|(전체)
+1st Base|1루
+1st Base Runner|1루 주자
+1st Baseman|1루수
+2nd Base|2루
+2nd Base Runner|2루 주자
+2nd Baseman|2루수
+3rd Base|3루
+3rd Base Runner|3루 주자
+3rd Baseman|3루수
+AMERICAN LEAGUE|아메리칸 리그
+ARE YOU SURE YOU |정말로
+ARIZONA|애리조나
+AUDIO OPTIONS|오디오 옵션
+AWARDS|시상
+Accept|확인
+Age :|나이 :
+Agent|자유계약
+All available slots are full.|빈 슬롯이 없습니다.
+All-Star|올스타
+American League|아메리칸 리그
+Announcer Vol|해설 볼륨
+Are you sure you want|정말로
+Arizona|애리조나
+Arizona Diamondbacks|애리조나 다이아몬드백스
+Arm|어깨
+Arm      |어깨
+Attributes|능력치
+Average|평균
+BATTING STATS|타격 기록
+BIG LEAGUE CHALLENGE|빅 리그 챌린지
+BIG LEAGUE CHALLENGE OPTIONS|빅 리그 챌린지 옵션
+BUILT|개장
+BYE|부전승
+Back|뒤로
+Ball|볼
+Baserunner|주자
+Baserunning Menu|주루 메뉴
+Bats :|타격 :
+Batter|타자
+Batting|타격
+Batting Order|타순
+Batting/Fielding Ratings|타격/수비 능력치
+Bench|벤치
+Big League Challenge|빅 리그 챌린지
+Big League Challenge Results For|빅 리그 챌린지 결과 -
+Bunt|번트
+CAPACITY|수용 인원
+CENTER|중앙
+CITY|도시
+CLUB|구단
+CONTINUE|계속
+CONTROLLER SELECT|컨트롤러 선택
+CPU/User|CPU/사용자
+CREATE PLAYER|선수 만들기
+CREDITS|제작진
+Cancel|취소
+Catcher|포수
+Center Fielder|중견수
+Central|중부
+Change Letter|글자 변경
+Change letter|글자 변경
+Changes have not|변경 내용을
+Choose|선택
+Choose |선택
+Choose Selection|선택하기
+Clear|지우기
+Clutch     |클러치
+Cons|신중
+Contact   |컨택
+Continue|계속
+Controller 1 Vibration|컨트롤러 1 진동
+Controller 2 Vibration|컨트롤러 2 진동
+Controls|조작
+Core position must|핵심 포지션부터
+Create|만들기
+Crowd Volume|관중 볼륨
+DEFENSE|수비
+DEMO MODE|데모 모드
+DIAMONDBACKS|다이아몬드백스
+DRAFT|드래프트
+DRAFT ORDER|드래프트 순서
+DUE UP|다음 타자
+Delete|삭제
+Delete/Add|삭제/추가
+Diamondbacks|다이아몬드백스
+Difficulty|난이도
+Division Titles:|지구 우승:
+Do you want to sign|이 선수와 계약할까요?
+Do you wish to continue?|계속할까요?
+Done|완료
+Double Play Depth|병살 수비
+Draft|드래프트
+Draft |드래프트
+Draft Order|드래프트 순서
+Edit|편집
+Edit Player|선수 편집
+Errors|실책
+Expos|엑스포스
+Eye        |선구안
+FREE AGENTS|자유계약 선수
+Fielding|수비
+Fielding  |수비
+Fielding Aid|수비 보조
+Fielding Glove Col|수비 장갑 색
+Finish|마치기
+Firstbase|1루
+Founded:|창단:
+Free|자유
+Free Agents Block|자유계약 목록
+GAME MODES|경기 모드
+GAME OPTIONS|경기 옵션
+GAME RESULTS|경기 결과
+Gameplay|게임 플레이
+Guard Lines|라인 수비
+HOMERUNS|홈런
+Height :|키 :
+Help|도움말
+Home|홈
+Home Plate|홈 플레이트
+Home Runs This Inning|이번 이닝 홈런
+INSIDE EA SPORTS|EA 스포츠 소개
+Infield|내야
+Infield In|내야 전진
+Infield Left|내야 좌측
+Infield Menu|내야 메뉴
+Infield Normal|내야 정상
+Infield Out|내야 후진
+Infield Right|내야 우측
+Inning|이닝
+Innings|이닝
+Knuckle Ball|너클볼
+LEFT|좌측
+LINEUP|라인업
+LINEUP   |라인업
+LOST. PROCEED ?|사라집니다. 진행할까요?
+LOST. PROCEED?|사라집니다. 진행할까요?
+Last Title:|최근 우승:
+Left Fielder|좌익수
+Load|불러오기
+Load Playoffs|포스트시즌 불러오기
+Load Season|시즌 불러오기
+Loading...|불러오는 중...
+Locate Pitch|투구 위치
+Long|롱릴리프
+Longest|최장
+MONTREAL|몬트리올
+Manual|수동
+Memory Card (8MB) |메모리 카드(8MB)
+Menu|메뉴
+Mode|모드
+Montreal|몬트리올
+Montreal Expos|몬트리올 엑스포스
+Music Volume|음악 볼륨
+NATIONAL LEAGUE|내셔널 리그
+NAVIGATION|조작 안내
+NO|아니요
+NONE|없음
+NY Yankees|뉴욕 양키스
+Name|이름
+Name:|이름:
+National League|내셔널 리그
+Natural Grass|천연 잔디
+New Playoffs|새 포스트시즌
+New Season|새 시즌
+New York|뉴욕
+Next Letter|다음 글자
+No.|번호
+Now Loading...|불러오는 중...
+Now...|지금...
+Number of Innings|이닝 수
+OFF|끔
+OK|확인
+OUT - INFIELD FLY RULE|아웃 - 인필드 플라이
+OUTS|아웃
+Off|끔
+Outfield|외야
+Outfield In|외야 전진
+Outfield Left|외야 좌측
+Outfield Menu|외야 메뉴
+Outfield Normal|외야 정상
+Outfield Out|외야 후진
+Outfield Right|외야 우측
+Outs|아웃
+Overall|전체
+Overlays|화면 표시
+PITCHING ROTATION|선발 로테이션
+PITCHING STATS|투구 기록
+PLAYER OF THE GAME|오늘의 선수
+PLAYOFFS|포스트시즌
+PRE GAME|경기 전
+PRESS ANY BUTTON|아무 버튼이나 누르세요
+Pause Menu|일시정지 메뉴
+Pick-Off|견제
+Pitch|투구
+Pitch Hand|투구 손
+Pitch Power Meter|투구 파워 게이지
+Pitch Type|구종
+Pitcher|투수
+Pitching|투구
+Pitching Chart|투구 차트
+Pitching Leaders|투구 순위권
+Play|플레이
+Play Again|다시 하기
+Play Game|경기 하기
+Play/Stop|재생/정지
+Playback|재생
+Player|선수
+Player 1|플레이어 1
+Player Info|선수 정보
+Player Name|선수 이름
+Player results will be lost. Proced?|선수 결과가 사라집니다. 진행할까요?
+Playoff Leaders|포스트시즌 순위권
+Playoff Length|포스트시즌 길이
+Playoff Options|포스트시즌 옵션
+Position|포지션
+Positioning|수비 위치
+Power|파워
+Power     |파워
+Prep. for Bunt|번트 대비
+Proceed ?|진행할까요?
+Proceed anyway?|그래도 진행할까요?
+RETRY|재시도
+RIGHT|우측
+ROSTERS|로스터
+ROSTERS ?|로스터를 초기화할까요?
+RUNSSCORED|득점
+Random|무작위
+Reaction|반응
+Reaction   |반응
+Replace|교체
+Reset|초기화
+Results|결과
+Retreat|귀루
+Return To Menu|메뉴로 돌아가기
+Review|검토
+Right|우
+Right Fielder|우익수
+Road|원정
+Rookie|신인
+Rotation|로테이션
+Round|라운드
+Running|주루
+SAVE / LOAD|저장 / 불러오기
+SEASON|시즌
+SEASON OPTIONS|시즌 옵션
+SERIES|시리즈
+SINGLE GAME|단일 경기
+STANDINGS|순위
+STATISTICS|통계
+STOLENBASES|도루
+SURFACE|구장 바닥
+San Francisco|샌프란시스코
+San Fransisco|샌프란시스코
+Save|저장
+Score|점수
+Scroll|이동
+Season|시즌
+Season Length|시즌 길이
+Second/Short|2루/유격
+Secondbase|2루
+Select|선택
+Select |선택
+Select - Back|SELECT - 뒤로
+Select Player|선수 선택
+Select Stats|기록 선택
+Select Team|팀 선택
+Series Titles:|시리즈 우승:
+Settings|설정
+Shortstop|유격수
+Sign|계약
+Sim|시뮬
+Sim All|모두 시뮬
+Simulating|시뮬레이션 중
+Size|크기
+Sort|정렬
+Sort Stats|기록 정렬
+Sound FX Volume|효과음 볼륨
+Speed|스피드
+Speed      |스피드
+Start Season|시즌 시작
+Statistics|통계
+Stereo|스테레오
+Streak|연속
+Strike|스트라이크
+Swing|스윙
+Switch|교체
+Switch Players|선수 교체
+TEAM|팀
+TEAM ROSTER|팀 로스터
+TEAM SELECT|팀 선택
+TOP|초
+TOP 10|상위 10위
+TRADES|트레이드
+TRIPLE PLAY BASEBALL|트리플 플레이 베이스볼
+Team|팀
+Teams|팀
+The current player|현재 선수를
+Thirdbase|3루
+This position can not|이 포지션은
+This trade has been deemed|리그 사무국이 이 트레이드를
+This will simulate all |모든 경기를 시뮬레이션합니다
+This will simulate all games|모든 경기를 시뮬레이션합니다
+Throws :|투구 :
+To draft you must|직접 드래프트하려면
+Today:|오늘:
+Toggle Help|도움말 전환
+Toggle Home/Away Stats|홈/원정 기록 전환
+Top|초
+Total Home Runs|총 홈런
+Trade|트레이드
+Trading Block|트레이드 목록
+Triple Play|트리플 플레이
+UNSAVED DATA WILL BE|저장하지 않은 데이터가
+User Owned Teams|사용자 소유 팀
+W Showdown|월드 쇼다운
+WANT TO RESET YOUR|로스터를 초기화할까요?
+WIND|바람
+WINNER|승자
+WORLD|월드
+Weight :|체중 :
+Wildcard Race|와일드카드 경쟁
+With|교체
+With Runners|주자 있을 때
+World Series MVP|월드 시리즈 MVP
+Would you like to |다음을 하겠습니까:
+Would you like to abort and lose|드래프트를 중단하고 지명한 선수를
+YES|예
+Yankees|양키스
+You cannot delete a|팀과 계약한 직접 만든 선수는
+You must delete an|새 선수를 만들려면
+You must select|다음을 골라야 합니다:
+You must select the same|양쪽에서 같은 수의
+Your player was added|선수가 자유계약 목록에
+a player to control in|조작할 선수를 골라야 합니다
+all draft picks ?|모두 취소할까요?
+be filled first.|채워야 합니다.
+be filled twice.|두 번 채울 수 없습니다.
+been saved.|저장하지 않았습니다.
+choose a team to own.|맡을 팀을 골라야 합니다.
+created player who |삭제할 수 없습니다
+data can not be saved without a memory card|메모리 카드가 없으면 데이터를 저장할 수 없습니다
+each side.|선수를 골라야 합니다.
+existing player in order|기존 선수를 삭제해야
+games including user|사용자 경기 포함
+games including user games.|(사용자 경기 포함)
+games through this day.|이 날까지 진행합니다.
+games up to this day.|이 날 전까지 진행합니다.
+has not been saved.|저장하지 않았습니다.
+him to a team now?|지금 팀과 계약할까요?
+inserted in MEMORY CARD|메모리 카드 슬롯 1에
+is signed to a team.|(팀과 계약된 선수)
+manually draft ?|직접 드래프트할까요?
+mph|mph
+number of players on|선수를 골라야 합니다
+slot 1.|꽂혀 있지 않습니다.
+to create a new one.|합니다.
+to reset the draft?|드래프트를 초기화할까요?
+to the Free Agent list|추가되었습니다
+unfair by the League Office.|불공정하다고 판정했습니다.
+vs|vs
+w/o  DH|지명타자 없음
