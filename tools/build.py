@@ -14,6 +14,9 @@ TR = P('translation')
 INGAME_ELF = [(0x3eb458, 0x3ebfb0), (0x3f21d8, 0x3f4d20), (0x3ff318, 0x400300)]
 INGAME_FONTS = {'TAHOMA11', 'ARIAL10B', 'ARIAL20B', 'TAHOMA14'}
 FONTS = ['TAHOMA14', 'TAHOMA11', 'AURORA20', 'AURO20B', 'AUR11', 'ARIAL20B', 'ARIAL11', 'ARIAL10B']
+# FEL 좌표 보정 (파일, 요소) -> x 이동: 한글 라벨·값이 상자 테두리·구분선에 붙는 곳
+FEL_DX = {('fes_seasonteam.fel', k): 4 for k in ('FOUNDED', 'RECORD2000', 'SERIESTITLES', 'DEVISIONTITLES', 'LASTTITLE2')}
+FEL_DX.update({('fes_seasonteam.fel', k): -3 for k in ('FOUNDYEAR', 'RECORD', 'SERIES', 'DIVISION', 'LASTTITLE')})
 
 
 def read_src(name, keyint=False):
@@ -110,6 +113,13 @@ def main():
                 q = lines[tx[base]].lstrip(' ')[3:].split(',')
                 if p[9] == q[9] and p[10] != q[10]:
                     p[10] = q[10]; lines[li] = l[:len(l) - len(s)] + 'TX:' + ','.join(p)
+        for li, l in enumerate(lines):
+            s = l.lstrip(' ')
+            if s[:3] in ('TX:', 'TB:'):
+                p = s[3:].split(',')
+                dx = FEL_DX.get((name, p[0]))
+                if dx:
+                    p[2] = str(int(p[2]) + dx); lines[li] = l[:len(l) - len(s)] + s[:3] + ','.join(p)
         fel_new.append((name, '\r\n'.join(lines)))
     # 3) ELF 문자열
     elf = bytearray(get('SLUS_201.68'))
@@ -136,6 +146,20 @@ def main():
         if not 0x3dce80 <= a < 0x412380: break
         s0 = elf[a - 0xff000:elf.index(b'\0', a - 0xff000)].decode('latin1')
         if s0 in POS: copies.append((k, POS[s0])); enc.add(POS[s0])
+    # 경기 중 로스터의 포지션·타격 손 표: 2B/3B/R 을 기록 약어(2루타/3루타/득점)와 같은 문자열로 공유하므로 사본으로
+    HAND = dict(POS, PH='대타', R='우', L='좌', S='양')
+    # 같은 화면의 기록 머리글 표(AVG/HR/RBI/SB)
+    STAT = {'AVG': '타율', 'HR': '홈런', 'RBI': '타점', 'SB': '도루'}
+    for k in list(range(0x27eb60, 0x27eb9c, 4)) + list(range(0x27e778, 0x27e78c, 4)) + list(range(0x27eba0, 0x27ec3c, 0x18)):
+        a = struct.unpack_from('<I', elf, k)[0]
+        if not 0x3dce80 <= a < 0x412380: continue
+        s0 = elf[a - 0xff000:elf.index(b'\0', a - 0xff000)].decode('latin1')
+        t = (HAND if k < 0x27eb9c and k >= 0x27eb60 else STAT).get(s0)
+        if t: copies.append((k, t)); enc.add(t)
+    # FESRostInfoBox::SetInfo 투수 손 표시: a2 = 좌완 ? "L" : "R"(R은 기록 약어 '득점'과 공유)
+    for va, old, t in [(0x19e22c, 0x2446b5f0, '좌'), (0x19e230, 0x244690f8, '우')]:
+        assert struct.unpack_from('<I', elf, va - 0xff000)[0] == old
+        copies.append((('c', va, 0x3f), t)); enc.add(t)
     errs += elfstrings.apply(elf, elf_tr, enc, copies=copies)
     out['SLUS_201.68'] = elfpatch.patch(bytes(elf))
     pb, e = players.apply(get('DATA/ZPLAYERS.ATT'), first, last, enc); errs += e
@@ -173,9 +197,11 @@ def main():
     cdbuild.build(SRC, DST, out)
     open(P('Triple Play Baseball (Korean).cue'), 'w').write(
         'FILE "Triple Play Baseball (Korean).bin" BINARY\n  TRACK 01 MODE2/2352\n    INDEX 01 00:00:00\n')
+    widescreen.write(out['SLUS_201.68'], ROOT, '한글 패치')
+    widescreen.write(get('SLUS_201.68'), ROOT, None)
     print('완료:', DST)
 
 
-import elfstrings
+import elfstrings, widescreen
 if __name__ == '__main__':
     main()

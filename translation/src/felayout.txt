@@ -140,7 +140,7 @@ LOST. PROCEED?|사라집니다. 진행할까요?
 Last Title:|최근 우승:
 Left Fielder|좌익수
 Load|불러오기
-Load Playoffs|포스트시즌 불러오기
+Load Playoffs|불러오기
 Load Season|시즌 불러오기
 Loading...|불러오는 중...
 Locate Pitch|투구 위치
@@ -362,3 +362,7 @@ to the Free Agent list|추가되었습니다
 unfair by the League Office.|불공정하다고 판정했습니다.
 vs|vs
 w/o  DH|지명타자 없음
+AVG.|타율
+AVG|타율
+RBI|타점
+HR|홈런

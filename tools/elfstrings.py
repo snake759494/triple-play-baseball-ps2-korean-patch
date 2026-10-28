@@ -102,7 +102,9 @@ def apply(elf, tr, enc, log=print, copies=()):
         moved += 1
     for po, t in copies:
         b = enc.enc(t)
-        slot = next((i for i, (pa, pn) in enumerate(pool) if pn >= len(b)), None)
+        # po = 데이터 포인터 파일오프셋, 또는 ('c', addiu 가상주소, lui 상위값): 같은 64KB 구간 안 사본만 가능
+        code = isinstance(po, tuple)
+        slot = next((i for i, (pa, pn) in enumerate(pool) if pn >= len(b) and (not code or hi_of(pa) == po[2])), None)
         if slot is None:
             log(f'  [사본 공간 부족] {t}'); errs += 1; continue
         pa, pn = pool[slot]
@@ -110,6 +112,11 @@ def apply(elf, tr, enc, log=print, copies=()):
         rest = pn - len(b) - 1
         if rest >= 4: pool[slot] = (pa + len(b) + 1, rest)
         else: pool.pop(slot)
-        struct.pack_into('<I', elf, po, pa)
+        if code:
+            ao = po[1] - BASE
+            w = struct.unpack_from('<I', elf, ao)[0]
+            struct.pack_into('<I', elf, ao, (w & 0xffff0000) | (pa & 0xffff))
+        else:
+            struct.pack_into('<I', elf, po, pa)
     log(f'  ELF 문자열: {len(jobs)}개 (재배치 {moved}), 남은 빈 공간 {sum(n for _, n in pool)}바이트')
     return errs

@@ -101,15 +101,18 @@ def build(name, raw, chars, fit256=False):
             place = [pl for pl in place if pl[2] + rowh <= lim]; y = max(pl[2] for pl in place)
             print(f'    {name}: 공간 부족으로 {len(dropped)}자 제외')
     H = (y + rowh + 3) & ~3
+    if not fit256: H = W   # 정사각형으로 채움: 텍스처 높이가 2의 거듭제곱보다 작으면 일부 화면(TB 버튼 등)에서 세로가 반으로 찌그러짐
     img = np.zeros((H, W), np.uint8)
     img[:f.th, :f.tw] = f.img
     glyphs = [list(g) for g in f.glyphs]
     sp = 1 if cap < 16 else 2
+    # 원본 라틴 글리프는 xoff 1, 전진폭이 그림보다 1 짧아(잉크가 진행폭 오른쪽에 걸침) 가운데 정렬 시 한글만 왼쪽으로 치우친다
+    ishift = 2 if pixel else 1
     for code, gx, gy, g, xo, yo in place:
         h, w = g.shape
         img[gy:gy + h, gx:gx + w] = g
-        xoff = max(0, xo)
-        adv = w + xoff + (1 if pixel else sp)
+        xoff = max(0, xo) + ishift
+        adv = w + xoff - ishift + (1 if pixel else sp)
         glyphs.append([code, w, h, gx, gy, adv, xoff, base_y + yo, 0])
     glyphs.sort(key=lambda g: g[0])
     return pack(f, glyphs, img), img

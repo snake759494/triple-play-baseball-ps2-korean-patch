@@ -1,10 +1,10 @@
 # 트리플 플레이 베이스볼 PS2 한글패치
 
-PS2 북미판 **Triple Play Baseball (SLUS-20168)**용 비공식 한국어 패치입니다. 메뉴, 옵션, 시즌 모드, 경기 HUD, 일시정지 메뉴, 조작 도움말, 메모리 카드 안내, 구장 소개를 한국어로 바꿨습니다. **선수 이름 약 800명, 구장·레전드 이름, 기록·구종·포지션 약어**도 한글로 나옵니다. PCSX2용 **16:9 와이드 패치**도 함께 배포합니다. 현재 배포판은 **v1.0 (2026-10-28)**입니다.
+PS2 북미판 **Triple Play Baseball (SLUS-20168)**용 비공식 한국어 패치입니다. 메뉴, 옵션, 시즌 모드, 경기 HUD, 일시정지 메뉴, 조작 도움말, 메모리 카드 안내, 구장 소개를 한국어로 바꿨습니다. **선수 이름 약 800명, 구장·레전드 이름, 기록·구종·포지션 약어**도 한글로 나옵니다. PCSX2용 **16:9 와이드 패치**도 함께 배포합니다. 현재 배포판은 **v1.1 (2026-10-29)**입니다.
 
 [패치 다운로드](https://github.com/snake759494/triple-play-baseball-ps2-korean-patch/releases/latest) · [기술 설명](docs/TECHNICAL.md) · [재빌드](docs/BUILD.md) · [변경 기록](CHANGELOG.md) · [권리 안내](RIGHTS.md)
 
-릴리즈 첨부 파일은 한글패치 **Triple_Play_Baseball_PS2_KO_v1.0.xdelta**와 와이드 패치 **SLUS-20168_146E1999.pnach**(한글판용), **SLUS-20168_69952C2E.pnach**(원본판용)입니다. 저장소에는 제작 소스, 번역, 검증 자료만 공개합니다. 원본 디스크 이미지와 완성된 디스크 이미지, 추출한 게임 파일, 글꼴 파일, 외부 실행 파일은 포함하지 않습니다. GitHub가 자동으로 만드는 Source code ZIP/TAR는 저장소 소스를 압축한 것이며 게임 파일이 아닙니다.
+릴리즈 첨부 파일은 한글패치 **Triple_Play_Baseball_PS2_KO_v1.1.xdelta**와 와이드 패치 **SLUS-20168_8BCAD5C3.pnach**(한글판용), **SLUS-20168_69952C2E.pnach**(원본판용)입니다. 저장소에는 제작 소스, 번역, 검증 자료만 공개합니다. 원본 디스크 이미지와 완성된 디스크 이미지, 추출한 게임 파일, 글꼴 파일, 외부 실행 파일은 포함하지 않습니다. GitHub가 자동으로 만드는 Source code ZIP/TAR는 저장소 소스를 압축한 것이며 게임 파일이 아닙니다.
 
 ## 게임 소개 및 대상 버전
 
@@ -22,13 +22,13 @@ PS2 북미판 **Triple Play Baseball (SLUS-20168)**용 비공식 한국어 패�
 | **원본 BIN MD5** | `ce856af54ca6b876bf1d6f393b721dea` |
 | 원본 BIN SHA-1 | `f7f59359f28ab0bca9e671239201de14636ada80` |
 | 원본 BIN SHA-256 | `bc0381c573554ecb8a7af97908aebb8850973ab3bb06068f89a8f08248dd9ad2` |
-| xdelta 파일 크기 | 1,282,808 바이트 |
-| xdelta SHA-256 | `eca94b0cfb403e23a9d19650908adb92dbf3f46871ac4184077fc8b67575be0e` |
-| 적용 결과 BIN 크기 | 656,650,176 바이트 |
-| 적용 결과 BIN SHA-1 | `6ced97654559b51d997f044f2d206518f7458554` |
-| 적용 결과 BIN SHA-256 | `44f85bf924f0527ff8e1f4af8b4cb4874f7ba8e97acfaa880bd35d590673d6ee` |
+| xdelta 파일 크기 | 1,302,087 바이트 |
+| xdelta SHA-256 | `37a434ab652d5cfc5e8fe5aafdac5e24928101a8c894fe3117d5f53a96439056` |
+| 적용 결과 BIN 크기 | 657,012,384 바이트 |
+| 적용 결과 BIN SHA-1 | `c7c7c20ae70e76869a6b465d47698bbd6611f27f` |
+| 적용 결과 BIN SHA-256 | `ef0d216f90fd8492ffbd32dec82027ae24092ed3fea3d172fa0334b5ea4303db` |
 
-원래 자리에 들어가지 않는 파일을 이미지 끝에 붙이기 때문에, 결과 BIN은 원본보다 약 0.9MB 큽니다. 원본 게임 파일은 사용자가 직접 준비해야 합니다.
+원래 자리에 들어가지 않는 파일을 이미지 끝에 붙이기 때문에, 결과 BIN은 원본보다 약 1.2MB 큽니다. 원본 게임 파일은 사용자가 직접 준비해야 합니다.
 
 ## 패치 적용 방법
 
@@ -42,7 +42,7 @@ Get-FileHash -Algorithm MD5 -LiteralPath '.\Triple Play Baseball (USA).bin'
 
 ### xdelta UI 사용
 
-1. 릴리즈에서 `Triple_Play_Baseball_PS2_KO_v1.0.xdelta`를 받습니다.
+1. 릴리즈에서 `Triple_Play_Baseball_PS2_KO_v1.1.xdelta`를 받습니다.
 2. xdelta3 패치를 지원하는 도구에서 **Apply Patch** 기능을 엽니다.
 3. **Patch**에는 xdelta 파일을, **Source File**에는 해시가 일치하는 원본 `.bin`을 선택합니다.
 4. **Output File**에는 새 파일 이름을 지정합니다(예: `Triple Play Baseball (Korean).bin`).
@@ -52,13 +52,13 @@ xdelta는 호환성을 위해 압축·2차 압축·파일 경로 헤더 없이 �
 ### 명령줄 사용
 
 ```powershell
-.\xdelta3.exe -d -s '.\Triple Play Baseball (USA).bin' '.\Triple_Play_Baseball_PS2_KO_v1.0.xdelta' '.\Triple Play Baseball (Korean).bin'
+.\xdelta3.exe -d -s '.\Triple Play Baseball (USA).bin' '.\Triple_Play_Baseball_PS2_KO_v1.1.xdelta' '.\Triple Play Baseball (Korean).bin'
 ```
 
 해시를 자동으로 검사하는 도구도 있습니다. Python 3과 xdelta3가 필요하며, 같은 이름의 출력 파일이 이미 있으면 덮어쓰지 않습니다.
 
 ```powershell
-python tools/apply_release.py --xdelta '.\xdelta3.exe' --source '.\Triple Play Baseball (USA).bin' --patch '.\Triple_Play_Baseball_PS2_KO_v1.0.xdelta' --output '.\Triple Play Baseball (Korean).bin'
+python tools/apply_release.py --xdelta '.\xdelta3.exe' --source '.\Triple Play Baseball (USA).bin' --patch '.\Triple_Play_Baseball_PS2_KO_v1.1.xdelta' --output '.\Triple Play Baseball (Korean).bin'
 ```
 
 ### CUE 파일
@@ -77,16 +77,16 @@ FILE "Triple Play Baseball (Korean).bin" BINARY
 
 ## 16:9 와이드 패치 (PCSX2)
 
-웹과 PCSX2 내장 패치 목록에 이 게임용 와이드 패치가 없어 새로 만들었습니다. 3D 화면(경기장·선수)의 가로 시야를 넓혀 16:9 화면을 늘림 없이 채웁니다.
+웹과 PCSX2 내장 패치 목록에 이 게임용 와이드 패치가 없어 새로 만들었습니다. 3D 화면(경기장·선수)의 가로 시야를 넓혀 16:9 화면을 늘림 없이 채웁니다. **한글패치 버전이 바뀌면 실행파일 CRC도 바뀌므로, 와이드 패치는 항상 같은 릴리즈의 pnach를 쓰세요.** v1.0용 `SLUS-20168_146E1999.pnach`는 v1.1에서 동작하지 않습니다.
 
 | 파일 | 대상 | 게임 CRC |
 | --- | --- | --- |
-| `SLUS-20168_146E1999.pnach` | 이 한글패치를 적용한 게임 | `146E1999` |
+| `SLUS-20168_8BCAD5C3.pnach` | 이 한글패치를 적용한 게임 | `8BCAD5C3` |
 | `SLUS-20168_69952C2E.pnach` | 원본 북미판(영문) | `69952C2E` |
 
 ### 설치 (PCSX2 v2.x)
 
-1. 릴리즈에서 자신의 게임에 맞는 `.pnach` 파일을 받습니다. 한글판이면 `SLUS-20168_146E1999.pnach`입니다. 파일 이름을 바꾸지 마세요(PCSX2는 이름의 CRC로 게임을 찾습니다).
+1. 릴리즈에서 자신의 게임에 맞는 `.pnach` 파일을 받습니다. 한글판이면 `SLUS-20168_8BCAD5C3.pnach`입니다. 파일 이름을 바꾸지 마세요(PCSX2는 이름의 CRC로 게임을 찾습니다).
 2. PCSX2 `patches` 폴더에 넣습니다.
    - 설치판: `문서\PCSX2\patches\`
    - 휴대용판: `pcsx2-qt.exe`가 있는 폴더의 `patches\`
@@ -98,7 +98,7 @@ FILE "Triple Play Baseball (Korean).bin" BINARY
 ### 끄기·문제 해결
 
 - 끄려면 4번의 체크를 해제합니다.
-- 패치 탭에 항목이 보이지 않으면 파일 이름의 CRC와 게임의 CRC가 다른 것입니다. 게임을 실행한 뒤 **도구 → 로그 표시**에서 `CRC:` 줄을 확인하세요. 한글패치를 적용한 BIN이면 `146E1999`, 원본이면 `69952C2E`가 나와야 합니다.
+- 패치 탭에 항목이 보이지 않으면 파일 이름의 CRC와 게임의 CRC가 다른 것입니다. 게임을 실행한 뒤 **도구 → 로그 표시**에서 `CRC:` 줄을 확인하세요. 한글패치를 적용한 BIN이면 `8BCAD5C3`, 원본이면 `69952C2E`가 나와야 합니다.
 - 화면이 여전히 4:3이면 **설정 → 그래픽 → 화면비**가 "자동(4:3/3:2 프로그레시브)" 대신 4:3으로 고정되어 있는지 확인하고 16:9로 바꾸세요.
 - PCSX2 1.6 이하에서는 `cheats_ws` 폴더에 넣고 **와이드스크린 패치 사용**을 켜세요. 이 경우 `[Widescreen 16:9]` 줄을 지워야 할 수 있습니다.
 
@@ -133,7 +133,7 @@ FILE "Triple Play Baseball (Korean).bin" BINARY
 ### 번역하지 않은 것
 
 - 로고·로딩 그림, FMV, 실황 음성
-- 일부 1글자 약어(R, H, P, 타격 손 L/R/S 등. 다른 칸과 문자열을 공유)
+- 경기 중 점수판의 1글자 약어(R, H, E)
 - 경기 중 일시정지 점수판의 "0 Out" 등 일부 HUD 문자열
 - 제작진 화면의 직군 제목, 일정 화면의 USER/CPU/AT 그림 글자, 기록 머리글(RNK·ERA 등)
 

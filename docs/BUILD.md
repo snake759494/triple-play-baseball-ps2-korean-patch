@@ -14,7 +14,7 @@
 
 ```
 python tools/build.py      # -> Triple Play Baseball (Korean).bin / .cue
-xdelta3 -e -0 -S none -A -s "Triple Play Baseball (USA).bin" "Triple Play Baseball (Korean).bin" Triple_Play_Baseball_PS2_KO_v1.0.xdelta
+xdelta3 -e -0 -S none -A -s "Triple Play Baseball (USA).bin" "Triple Play Baseball (Korean).bin" Triple_Play_Baseball_PS2_KO_v1.1.xdelta
 ```
 
 ## 번역 수정
@@ -31,7 +31,7 @@ xdelta3 -e -0 -S none -A -s "Triple Play Baseball (USA).bin" "Triple Play Baseba
 
 ## 와이드 패치
 
-`patches/*.pnach`는 손으로 만든 파일입니다. 실행파일 `SetPerspective` 코드가 바뀌면 주소를 다시 확인하세요(`docs/TECHNICAL.md`). 파일 이름의 CRC는 실행파일 전체를 32비트 단어로 XOR한 값입니다.
+`tools/build.py`가 빌드할 때마다 `tools/widescreen.py`로 한글판·원본용 pnach를 만들어 저장소 루트에 씁니다(파일 이름의 CRC는 실행파일 전체를 32비트 단어로 XOR한 값). 릴리즈할 때는 이 파일을 `patches/`에 복사해 함께 첨부합니다.
 
 ## 검증
 
